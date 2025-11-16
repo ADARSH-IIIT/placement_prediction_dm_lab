@@ -15,7 +15,7 @@ st.set_page_config(
 def load_model():
     """Loads the pre-trained model from the .joblib file."""
     try:
-        model = joblib.load('placement_rf_model.joblib')
+        model = joblib.load('placement_xgb_model.joblib')
         return model
     except FileNotFoundError:
         st.error("Model file 'placement_rf_model.joblib' not found. Please place it in the same directory as app.py.")
